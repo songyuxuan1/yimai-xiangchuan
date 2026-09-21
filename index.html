@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>翼脉相传 · 逐梦长空 ｜ 北航飞行学院“翼脉相传”实践队</title>
+<meta name="description" content="北京航空航天大学飞行学院“翼脉相传”实践队 2026 年暑期社会实践：民航博物馆公益科普、南航北京分公司一线研学、全媒体传播矩阵与产业调研成果。" />
+<meta name="theme-color" content="#06101f" />
+<link rel="icon" href="assets/img/favicon.png" />
+<link rel="stylesheet" href="vendor/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script>document.documentElement.className += " js";</script>
+<noscript><style>.loader{display:none}.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+<body class="is-loading">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- ============ 载入动画 ============ -->
+<div class="loader" id="loader" role="status" aria-live="polite">
+  <div class="loader__stage">
+    <svg class="loader__route" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+      <path id="loaderPath" d="M -40 240 C 220 240 260 60 520 60 S 900 240 1240 100" />
+    </svg>
+    <div class="loader__plane" id="loaderPlane">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 16l20-6-20-6 4 6-4 6z" fill="currentColor"/></svg>
+    </div>
+  </div>
+  <div class="loader__meta">
+    <span class="loader__mark">翼脉相传</span>
+    <span class="loader__count"><b id="loaderNum">0</b>%</span>
+  </div>
+  <p class="loader__tip">正在装载航迹…</p>
+</div>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#hero">
+    <img src="assets/img/logo-trans.png" alt="“翼脉相传”实践队队徽" />
+    <span class="nav__brandText">翼脉相传<em>YI MAI XIANG CHUAN</em></span>
+  </a>
+  <nav class="nav__links" id="navLinks" aria-label="章节导航">
+    <a href="#origin">缘起</a>
+    <a href="#c1">科普筑梦</a>
+    <a href="#c2">一线寻航</a>
+    <a href="#c3">前辈开讲</a>
+    <a href="#c4">镜头传声</a>
+    <a href="#c5">成果回响</a>
+  </nav>
+  <a class="nav__cta" href="#outro">关于我们</a>
+  <button class="nav__burger" id="burger" aria-label="展开导航" aria-expanded="false"><i></i><i></i></button>
+</header>
+<div class="progress"><span id="progressBar"></span></div>
+<nav class="dots" id="dots" aria-label="章节指示"></nav>
+
+<main>
+
+<!-- ============ 封面 ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <img src="assets/img/sky-09.jpg" alt="中国国际航空波音747-8 与月亮" />
+  </div>
+  <canvas class="hero__stars" id="stars" aria-hidden="true"></canvas>
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <p class="hero__kicker"><span></span>北京航空航天大学飞行学院 · 2026 年暑期社会实践</p>
+    <h1 class="hero__title">
+      <span class="line"><b data-split>翼脉相传</b></span>
+      <span class="line line--accent"><b>逐梦长空</b></span>
+    </h1>
+    <p class="hero__lede">以青年学子的视角走进民航一线，看见百岗百态；<br />接住老一辈民航人传递下来的精神火种，再传给下一代。</p>
+    <div class="hero__facts">
+      <div><b>07.04</b><span>民航博物馆 · 航博奇妙游</span></div>
+      <div><b>07.05</b><span>南航北京分公司 · 一线研学</span></div>
+      <div><b>14</b><span>篇推送 · 3 大平台矩阵</span></div>
+    </div>
+  </div>
+
+  <a class="hero__cue" href="#origin"><span>向下滚动，开启航迹</span><i></i></a>
+</section>
+
+<!-- ============ 缘起 ============ -->
+<section class="section section--origin" id="origin">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__no">序 · PRELUDE</span>
+      <h2 class="sec-head__title" data-split>缘起 · 何以为传</h2>
+      <p class="sec-head__sub">Why we fly — 时代坐标与出发的动机</p>
+    </div>
+
+    <blockquote class="quote-lead reveal">
+      <p>“希望民航人 <b>为推动民航业高质量发展、建设交通强国贡献更多力量</b>。”</p>
+      <cite>—— 2024 年 7 月，习近平总书记给厦门航空全体员工回信</cite>
+    </blockquote>
+
+    <div class="grid-auto">
+      <article class="card card--glass reveal" data-tilt>
+        <div class="card__glow" aria-hidden="true"></div>
+        <h3 class="card__glyph">翼</h3>
+        <p>是机翼，是 C919 直上云霄的国之重器，是北航人“航空报国”的精神基因。</p>
+      </article>
+      <article class="card card--glass reveal" data-tilt>
+        <div class="card__glow" aria-hidden="true"></div>
+        <h3 class="card__glyph">脉</h3>
+        <p>是薪火，是航路，是 <b>7.7 亿人次</b>背后一条条被精密守护的空中脉络，是一代代民航人用安全纪录接力跑出来的传承。</p>
+      </article>
+      <article class="card card--glass reveal" data-tilt>
+        <div class="card__glow" aria-hidden="true"></div>
+        <h3 class="card__glyph">我们想做的事</h3>
+        <p>以青年学子的视角走进民航一线，看见百岗百态；接住老一辈民航人传递下来的精神火种，再传给下一代。</p>
+      </article>
+    </div>
+
+    <p class="closing-line reveal">从孩子到前辈、从课堂到公众——我们用一个暑假，完成了一次“相传”的闭环。</p>
+  </div>
+</section>
+
+<!-- ============ 第一章 ============ -->
+<section class="section section--c1" id="c1">
+  <div class="wrap">
+    <header class="chapter">
+      <span class="chapter__no" data-num="01">01</span>
+      <div>
+        <h2 class="chapter__title" data-split>科普筑梦</h2>
+        <p class="chapter__meta">2026.07.04　14:00 — 17:00　民航博物馆</p>
+      </div>
+    </header>
+
+    <div class="split">
+      <div class="split__text">
+        <h3 class="h3 reveal">“航博奇妙游” · 把专业讲给孩子听</h3>
+        <p class="reveal">理论宣讲从影视桥段与真实陆空通话的对比切入，破除大众对空地沟通的刻板印象，随后系统讲解<b>陆空通话核心准则</b>、<b>航空专用标准化用语</b>与<b>各类空中应急处置信号</b>，并结合真实案例点明规章的意义。</p>
+        <p class="reveal">理论之后是孩子们最期待的模拟飞行：队员借助专业飞行软件还原<b>赛斯纳 172</b> 座舱环境，先讲仪表读数，再带着小朋友依次上机，亲手体验<b>滑行、爬升、巡航</b>，把刚学到的空管指令与真实操纵对应起来。</p>
+        <ul class="figs reveal">
+          <li><b data-count="50" data-suffix="+">0</b><span>名参与青少年</span></li>
+          <li><b>8—15</b><span>岁年龄跨度</span></li>
+          <li><b>2</b><span>条主线：宣讲 + 实操</span></li>
+        </ul>
+      </div>
+      <figure class="split__media reveal">
+        <img src="assets/img/museum-01.jpg" alt="实践队员在民航博物馆开展科普宣讲" loading="lazy" />
+        <figcaption>“航博奇妙游”活动现场</figcaption>
+      </figure>
+    </div>
+
+    <div class="mosaic">
+      <figure class="reveal span-2"><img src="assets/img/live-08.jpg" alt="“航博奇妙游”科普活动大合影" loading="lazy" /><figcaption>“感谢聆听，请上台合影留念”</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/live-24.jpg" alt="队员手把手指导小朋友操纵驾驶盘" loading="lazy" /><figcaption>手把手带飞</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/live-30.jpg" alt="模拟机前围满体验飞行的小朋友" loading="lazy" /><figcaption>圆一个“小小飞行梦”</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/museum-02.jpg" alt="队员持话筒讲解航空仪表知识" loading="lazy" /><figcaption>从仪表讲起</figcaption></figure>
+      <figure class="reveal span-2"><img src="assets/img/museum-04.jpg" alt="队员在民航博物馆 C919 模型前" loading="lazy" /><figcaption>民航博物馆 · C919 模型前</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/live-19.jpg" alt="队员在现场拍摄记录" loading="lazy" /><figcaption>镜头里的现场</figcaption></figure>
+    </div>
+
+    <blockquote class="quote-mini reveal">
+      <p>“我发现开飞机真的不简单，需要好多好多练习才能飞得好。我以后也想当飞行员，在蓝天上飞来飞去！”</p>
+      <cite>—— 参与活动的小朋友 韩亦安</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ 第二章 ============ -->
+<section class="section section--c2" id="c2">
+  <div class="wrap">
+    <header class="chapter">
+      <span class="chapter__no" data-num="02">02</span>
+      <div>
+        <h2 class="chapter__title" data-split>一线寻航</h2>
+        <p class="chapter__meta">2026.07.05　中国南方航空股份有限公司北京分公司</p>
+      </div>
+    </header>
+
+    <p class="lead reveal">从 GOC 的巨型屏幕到航前准备室的放行资料，从模拟机驾驶舱的操纵杆到前辈的讲述——我们第一次站在民航运行的“中枢”里，看见安全是怎么被一航班一航班守出来的。</p>
+
+    <ol class="stops">
+      <li class="stop reveal">
+        <span class="stop__i">01</span>
+        <h3>GOC 运行控制中心</h3>
+        <p>走进亚洲最大的运行控制中心，系统了解大厅模块划分与各岗位核心职能，看航班计划系统如何支撑航班全生命周期管理。</p>
+      </li>
+      <li class="stop reveal">
+        <span class="stop__i">02</span>
+        <h3>机组航前准备室</h3>
+        <p>现场观摩大兴—吉林、大兴—莫斯科两个真实航班的航前准备：放行资料研读、飞行计划制定、飞行签到、酒精测试仪实操。</p>
+      </li>
+      <li class="stop reveal">
+        <span class="stop__i">03</span>
+        <h3>A320 模拟机实操</h3>
+        <p>每位队员独立完成 3—5 分钟标准进近，覆盖 3 海里、5 海里程序，并模拟侧风、风切变、雷雨等特殊工况。</p>
+      </li>
+      <li class="stop reveal">
+        <span class="stop__i">04</span>
+        <h3>前辈面对面</h3>
+        <p>与飞行经历 16 年的机长、执飞 A330 的副驾驶深入交流近 50 分钟，谈休息制度、责任担当、航校学习与职业倦怠。</p>
+      </li>
+    </ol>
+
+    <div class="strip" id="stripC2">
+      <figure class="reveal"><img src="assets/img/nanhang-01.jpg" alt="GOC运行控制中心大厅" loading="lazy" /><figcaption>GOC 运行控制中心</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/nanhang-02.jpg" alt="航前准备室指示与时钟" loading="lazy" /><figcaption>航前准备室 · 10:45</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/nanhang-06.jpg" alt="A320模拟机驾驶舱" loading="lazy" /><figcaption>A320 模拟机驾驶舱</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/nanhang-05.jpg" alt="队员在模拟机内进行标准进近操作" loading="lazy" /><figcaption>标准进近实操</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/nanhang-10.jpg" alt="实践队在南航北京分公司前的合影" loading="lazy" /><figcaption>南航北京分公司前大合照</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 第三章 ============ -->
+<section class="section section--c3" id="c3">
+  <div class="wrap">
+    <header class="chapter">
+      <span class="chapter__no" data-num="03">03</span>
+      <div>
+        <h2 class="chapter__title" data-split>前辈开讲</h2>
+        <p class="chapter__meta">田齐月书记 · 张润禾副书记　｜　近 50 分钟深度对话</p>
+      </div>
+    </header>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__row" data-marquee>
+      <span>没有朝九晚五，只有披星戴月</span><i>✦</i>
+      <span>学飞行，先学会为人处世</span><i>✦</i>
+      <span>带着问题去飞</span><i>✦</i>
+      <span>敬畏生命 · 敬畏职责 · 敬畏规章</span><i>✦</i>
+      <span>0 失误 · 0 差错 · 0 容忍</span><i>✦</i>
+      <span>地面苦练，空中精飞</span><i>✦</i>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="people">
+      <article class="person reveal">
+        <span class="person__mono" aria-hidden="true">田</span>
+        <div>
+          <h3>田齐月　书记</h3>
+          <p>机长、飞行教员，2010 年入职，飞行经历 16 年。</p>
+        </div>
+      </article>
+      <article class="person reveal">
+        <span class="person__mono" aria-hidden="true">张</span>
+        <div>
+          <h3>张润禾　副书记</h3>
+          <p>副驾驶，曾在加拿大航校训练约 16 个月，现执飞 A330。</p>
+        </div>
+      </article>
+    </div>
+
+    <figure class="wide-photo reveal">
+      <img src="assets/img/nanhang-07.jpg" alt="飞行前辈与队员交流现场" loading="lazy" />
+      <figcaption>前辈与队员交流现场 · 近 50 分钟深谈</figcaption>
+    </figure>
+
+    <div class="says">
+      <blockquote class="say reveal"><p>真正的硬约束是法规规定的休息期与执勤期：<b>连续任务须休够 48 小时，两班之间须间隔 10 小时</b>。不足 10 小时，航班必须拉掉、先休息。</p></blockquote>
+      <blockquote class="say reveal"><p>还是副驾驶那年飞西宁—北京，带飞机长接到家里电话——父亲去世了，而他的家就在西宁。他说：“<b>咱们先把航班安全飞回去。</b>”落地已是凌晨两点。</p></blockquote>
+      <blockquote class="say reveal"><p>倦怠是人性，普遍存在，不必讳言。<b>关键是识别它</b>，识别之后它就不再可怕。</p></blockquote>
+      <blockquote class="say reveal"><p>行业内广为流传：<b>先学会为人处世</b>——人做不好，飞行一定飞不好。每个副驾驶在机长眼里也分档次，要努力成为“五星级副驾驶”。</p></blockquote>
+      <blockquote class="say reveal"><p>人与人的差距，就是一天一天、一步一步显现出来的。<b>每年年底回头看看</b>：如果 1 月 1 日和 12 月 31 日相比没有任何变化，那这一年就白过了。</p></blockquote>
+    </div>
+
+    <div class="advice">
+      <h3 class="h3 reveal">带回来的 12 条成长建议（节选）</h3>
+      <ul class="chips">
+        <li class="reveal">带着问题去飞，不盲目飞行</li>
+        <li class="reveal">把上一班的问题总结下来，下一班有针对性地提问</li>
+        <li class="reveal">主动提问、主动思考，让思想跟着航班状态同步运行</li>
+        <li class="reveal">大胆表达需求与困惑，让教员明晰你的目的</li>
+        <li class="reveal">理论学扎实，向“半个气象员”看齐</li>
+        <li class="reveal">坚持运动，保持身体协调性与充沛精力</li>
+        <li class="reveal">注重仪容仪表与行为规范，站有站相、坐有坐相</li>
+        <li class="reveal">培养“复原力”，识别自身状态并及时调整</li>
+        <li class="reveal">给自己设定阶段性目标，让目标牵引长期努力</li>
+        <li class="reveal">正确认识淘汰机制，不把“顺利入学”当作“必然毕业”</li>
+      </ul>
+      <p class="tiny reveal">* 完整 12 条清单收录于《飞行员职业相关问题交流分享会纪要》。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 第四章 ============ -->
+<section class="section section--c4" id="c4">
+  <div class="wrap">
+    <header class="chapter">
+      <span class="chapter__no" data-num="04">04</span>
+      <div>
+        <h2 class="chapter__title" data-split>镜头传声</h2>
+        <p class="chapter__meta">公众号 + 小红书 + 微博　｜　从零搭起的传播矩阵</p>
+      </div>
+    </header>
+
+    <div class="grid-3">
+      <article class="card card--plat reveal" data-tilt>
+        <span class="tag">微信公众号</span>
+        <h3>深度纪实 · 主阵地</h3>
+        <p>输出实践纪实长文与深度科普，自 6 月 23 日首篇上线至 7 月底，累计发布图文推送 <b>12 篇</b>、实践 Vlog <b>2 部</b>。</p>
+      </article>
+      <article class="card card--plat reveal" data-tilt>
+        <span class="tag">小红书</span>
+        <h3>高清航空美图 · 轻科普</h3>
+        <p>7 月 17 日上线，主打停机坪实拍与机型档案，把航空浪漫讲给更多普通人听。</p>
+      </article>
+      <article class="card card--plat reveal" data-tilt>
+        <span class="tag">微博</span>
+        <h3>话题扩散 · 同频共振</h3>
+        <p>同步更新摄影作品与活动动态，与行业账号互动，扩大实践声量。</p>
+      </article>
+    </div>
+
+    <div class="swiper gallery reveal" id="gallery">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/img/sky-02.jpg" alt="停机坪上的机队" loading="lazy" /><span>停机坪</span></div>
+        <div class="swiper-slide"><img src="assets/img/sky-03.jpg" alt="飞机起飞瞬间" loading="lazy" /><span>腾空</span></div>
+        <div class="swiper-slide"><img src="assets/img/sky-04.jpg" alt="C919 机头特写" loading="lazy" /><span>C919</span></div>
+        <div class="swiper-slide"><img src="assets/img/sky-05.jpg" alt="C919 机身中国红涂装" loading="lazy" /><span>中国红</span></div>
+        <div class="swiper-slide"><img src="assets/img/sky-07.jpg" alt="夜色中的航站楼与飞机" loading="lazy" /><span>夜航</span></div>
+        <div class="swiper-slide"><img src="assets/img/sky-09.jpg" alt="银翼与月" loading="lazy" /><span>银翼与月</span></div>
+        <div class="swiper-slide"><img src="assets/img/photo-work-02.jpg" alt="队员拍摄航空摄影作品" loading="lazy" /><span>镜头背后</span></div>
+        <div class="swiper-slide"><img src="assets/img/team-02.jpg" alt="小红书平台发布的机型档案" loading="lazy" /><span>小红书 · 机型档案</span></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <ul class="figs figs--row">
+      <li class="reveal"><b data-count="40" data-suffix="+">0</b><span>篇原创内容</span></li>
+      <li class="reveal"><b data-count="9500" data-suffix="+">0</b><span>累计触达人次</span></li>
+      <li class="reveal"><b data-count="620" data-suffix="+">0</b><span>点赞</span></li>
+      <li class="reveal"><b data-count="54">0</b><span>次转发</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 第五章 ============ -->
+<section class="section section--c5" id="c5">
+  <div class="wrap">
+    <header class="chapter">
+      <span class="chapter__no" data-num="05">05</span>
+      <div>
+        <h2 class="chapter__title" data-split>成果回响</h2>
+        <p class="chapter__meta">从一线观察到可落地的建议</p>
+      </div>
+    </header>
+
+    <div class="bigstats">
+      <div class="bigstat reveal"><b data-count="15000">0</b><span>字产业调研报告</span></div>
+      <div class="bigstat reveal"><b data-count="12">0</b><span>条学员成长建议</span></div>
+      <div class="bigstat reveal"><b data-count="5">0</b><span>条产业调研创新建议</span></div>
+    </div>
+
+    <div class="grid-3 grid-3--ideas">
+      <article class="idea reveal"><span class="idea__no">建议一</span><h3>数字化能力前置培养</h3><p>联合开发“运控数字化认知”前置课程模块，把“学员进企业参观”的单向模式，升级为“企业数字化资源进课堂”的双向赋能。</p></article>
+      <article class="idea reveal"><span class="idea__no">建议二</span><h3>飞行作风前置养成</h3><p>编制《飞行学员作风养成手册》，建立作风积分制，把航空公司的标准操作程序转化为学员可执行的日常行为规范。</p></article>
+      <article class="idea reveal"><span class="idea__no">建议三</span><h3>学员观察员制度</h3><p>让公费养成生以“未来使用者”的视角，为运行流程优化提供来自一线的外部参考。</p></article>
+      <article class="idea reveal"><span class="idea__no">建议四</span><h3>模拟机训练数据化评估</h3><p>用操纵杆输入平滑度、油门响应、航向偏差等数据，补上“知道自己不好、却说不清哪里不好”的反馈缺口。</p></article>
+      <article class="idea reveal"><span class="idea__no">建议五</span><h3>职业使命感浸润式体验</h3><p>通过飞行前辈导师库、机长成长轨迹案例集与“职业使命日”，让学员从“要我飞”转向“我要飞”。</p></article>
+    </div>
+
+    <div class="press">
+      <h3 class="h3 reveal">媒体与平台报道</h3>
+      <div class="press__grid">
+        <article class="press__item reveal">
+          <img src="assets/img/press-01.jpg" alt="《中国民航报》刊发专题报道" loading="lazy" />
+          <div>
+            <span class="tag tag--gold">国家级行业媒体</span>
+            <h4>《中国民航报》刊发专题报道</h4>
+            <p>2026 年 7 月 22 日，《中国民航报》、中国民航网刊发《民航博物馆：搭建实践平台 筑牢航空科普高地》，其中“沉浸体验，模拟飞行点燃梦想”一节专门报道了我队的航博科普活动。</p>
+          </div>
+        </article>
+        <article class="press__item reveal">
+          <img src="assets/img/press-02.jpg" alt="民航博物馆官网转载" loading="lazy" />
+          <div>
+            <span class="tag">官方平台转载</span>
+            <h4>民航博物馆官网转载 · 南航与博物馆公众号报道</h4>
+            <p>7 月 28 日，民航博物馆官网转载同题文章；南方航空、民航博物馆官方微信公众号对实践队的科普与研学活动进行报道。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 尾声 ============ -->
+<section class="section section--outro" id="outro">
+  <div class="outro__bg" aria-hidden="true"><img src="assets/img/team-01.jpg" alt="" /></div>
+  <div class="wrap">
+    <h2 class="outro__title reveal" data-split>以初心为舵 · 以热爱为翼</h2>
+    <p class="outro__text reveal">短暂的暑期实践落幕，但逐梦蓝天的步履从未停歇。我们将继续怀凌云之志、笃实干之行，深耕民航一线、普及航空文化、传播蓝天正能量，让航空薪火在代代相传中生生不息。</p>
+
+    <div class="roster reveal">
+      <h3>“翼脉相传”实践队 · 队员名录</h3>
+      <ul id="rosterList"></ul>
+      <p class="tiny">北京航空航天大学飞行学院</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div class="foot__brand">
+      <img src="assets/img/logo-trans.png" alt="队徽" />
+      <div>
+        <b>翼脉相传 · 逐梦长空</b>
+        <span>北京航空航天大学飞行学院“翼脉相传”实践队</span>
+      </div>
+    </div>
+    <p class="foot__meta">2026 年 7 月 4 日 — 7 月 5 日　｜　民航博物馆 · 中国南方航空北京分公司<br />本站为实践队成果展示页，图文素材来自实践队原创内容。</p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="回到顶部">↑</button>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="vendor/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
