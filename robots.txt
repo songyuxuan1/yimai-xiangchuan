@@ -1,0 +1,4 @@
+# 本站为校内实践队展示页，含真实姓名与人像，不开放检索。
+# 有效控制手段是 index.html 里的 robots meta（robots.txt 只在域名根目录生效）。
+User-agent: *
+Disallow: /
